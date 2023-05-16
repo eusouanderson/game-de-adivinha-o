@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Incluindo arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" defer>
+    <!-- Incluindo os arquivos JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
+    <title>Jogo de adivinhação</title>
+</head>
+<body>
+    <!-- As a link -->
+    <section class=navebar >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Jogo de adivinhação</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Pagina Inicial<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              </a>
+            </li>
+        </div>
+      </nav>
+    </section>
+    <div class="container-sm" style="text-align: center;">
+        <form action="/submit" method="post">
+            <p>Selecione o Numero </p>
+            <input type="radio" id="opcao1" name="opcao" value="1">
+            <label for="opcao1">1</label><br>
+            <input type="radio" id="opcao2" name="opcao" value="2">
+            <label for="opcao2">2</label><br>
+            <input type="radio" id="opcao3" name="opcao" value="3">
+            <label for="opcao3">3</label><br>
+            <input type="radio" id="opcao4" name="opcao" value="4">
+            <label for="opcao4">4</label><br>
+            <input type="radio" id="opcao5" name="opcao" value="s5">
+            <label for="opcao5">5</label><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
