@@ -6,17 +6,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <!-- Incluindo arquivos CSS do Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" defer>
-    <!-- Incluindo os arquivos JavaScript do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
     <title>Jogo de adivinhação</title>
 </head>
 <body>
+  
     <!-- As a link -->
-    <section class=navebar >
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Jogo de adivinhação</a>
+        <a class="navbar-brand" href="/">Jogo de adivinhação</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +29,6 @@
             </li>
         </div>
       </nav>
-    </section>
     <div class="container-sm" style="text-align: center;">
         <form action="/submit" method="post">
             <p>Selecione o Numero </p>
@@ -42,10 +40,13 @@
             <label for="opcao3">3</label><br>
             <input type="radio" id="opcao4" name="opcao" value="4">
             <label for="opcao4">4</label><br>
-            <input type="radio" id="opcao5" name="opcao" value="s5">
+            <input type="radio" id="opcao5" name="opcao" value="5">
             <label for="opcao5">5</label><br>
-            <input type="submit" value="Enviar">
+           <button type="submit" class="btn btn-success">Enviar</button>
         </form>
+            <p> {{ erro }} </p>
+            <p> {{ maq }} </p>
+            
     </div>
 </body>
 </html>

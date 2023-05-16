@@ -18,11 +18,12 @@ def submit():
     if button_select == numberale:
         return render_template('win.html') 
     else:
-        print('Numero Errado!, Tente de novo!')
-        return render_template('index.html')
+        erro = 'Numero Errado!, Tente de novo!'
+        maq = f'Numero escolhido pela maquina foi {numberale}'
+        return render_template('index.html', erro=erro, maq = maq)
     
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
 
