@@ -61,8 +61,8 @@ http//seuip:5000
 
 
 
-![screenshot](/screenshots/Captura%20de%20tela%20de%202023-05-16%2010-24-23.png)
-![screenshot](/screenshots/Captura%20de%20tela%20de%202023-05-16%2010-28-54.png)
+![screenshot](/static/img/Captura%20de%20tela%20de%202023-05-17%2010-25-28.png)
+![screenshot](/static/img/Captura%20de%20tela%20de%202023-05-17%2010-25-37.png)
 
 
 ---
