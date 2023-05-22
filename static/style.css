@@ -1,63 +1,44 @@
 /* Estilos da barra de navegação */
-.navbar {
-    background-color: #156dc5;
-    color: #ffffff;
-  }
-  
-  .navbar-brand {
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-item .nav-link {
-    color: #ffffff;
-  }
-  
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #3498db;
-  }
-  
-  /* Estilos do formulário */
-  .container-sm {
-    text-align: center;
-    margin-top: 50px;
-    background-color: #22a7228c;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  input[type="radio"] {
-    margin-right: 5px;
-  }
-  
-  .btn-success {
-    margin-top: 20px;
-  }
-  
-  body {
-      text-align: center;
-      padding: 10px;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-  }
-  
-  h1 {
-      font-size: 48px;
-      color: #FFD700;
-  }
-  
-  p {
-      font-size: 24px;
-      color: #000;
-  }
-  
-  img {
-      width: 200px;
-  }
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Estilos do formulário */
+.container-sm {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #22a7228c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  border-radius: 15%;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  border-radius: 15%;
+  background-color: #f00;
+  color: #fff;
+}
+
+img {
+    width: 200px;
+}
